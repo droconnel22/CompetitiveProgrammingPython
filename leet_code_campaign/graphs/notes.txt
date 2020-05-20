@@ -1,0 +1,33 @@
+Graphs
+
+A structure that represents the relationship between two objects.
+
+
+Terminology:
+    Nodes: The objects who relation are expressed by edges
+    Edges: the connectors between nodoes
+
+    1 7 2 5
+
+    Root node: The root nodeis the ancestor of all other nodes in a Graph
+    it does not have any ancestor
+
+    Leaf Nodes: Nodes that dn't have children
+
+    Undirected graph, all edges are bidirectional
+
+    Directed graph: a graph which all the edges are 
+    uni-directional the edges point in a single directional
+
+    Weighted graph: each edge is assigned a weight or cost
+    e,o,w 
+    5,1,7
+    1,7,3
+    2,7,6
+    5,2,5
+
+
+    Cyclic graph: a graph that has at least one edge that
+    start from a nod eand end at the same node
+
+    

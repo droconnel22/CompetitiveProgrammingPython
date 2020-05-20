@@ -1,0 +1,33 @@
+Linked List
+
+
+A linear data structure where the elements are not
+stored in contiguous order in memory
+
+Two Types
+- Singly Linked List
+- Doubly Linked List
+
+
+5 -> 1 -> 3 -> 7
+
+memory locations can be fragmented
+
+head -> 5 -> 1 -> 3 -> 7 <- tail
+
+Disadvantage is 
+
+O(N) searching
+
+
+Advantage
+insertinos
+deletinos
+beginning in O(1) time
+
+Insertions
+
+Node:
+    val:Int
+    next:Node
+

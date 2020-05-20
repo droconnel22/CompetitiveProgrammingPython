@@ -1,0 +1,99 @@
+Hash Tables
+
+What is hashing ?
+
+Generating a value from a string using a mathematical function
+
+Real example:
+national Id, university Id
+
+
+A hash function takes a string of charactesr calles a key
+and maps to value of a certain length
+
+The hash value is representative of the original string of characters
+
+
+Easy to compute
+uniform distribution
+lwo collisions
+
+Importance of a good hash function
+
+sufficiently unique
+even distribution
+
+Better hash function
+
+
+keeping to o(1) as much as possible
+
+Collision handling:
+
+
+Since a hash functioni derives a small number
+from a big key, there is a chance that two keys
+would have the same value.
+
+collisions is when a key maps too a already
+occupied slot in the Tables
+
+
+Chaining
+
+Make each cell of the table point to a linked lisit
+
+keys
+0 -> value -> value
+1
+2 -> value
+3
+4 -> value -> value -> value
+
+slide can be o of n , uses extra space
+
+a single key ahvnig pointing at a list coin
+
+
+Open addressing
+
+Values are stored in the hard table itself
+
+if the hash index of akey is avaibale 
+insert directly into the table
+
+if the hash id of a key is not available problem until an
+available spot is
+
+Linear probing
+
+We probe to next slot, a typical gap between 2 probes is 1
+
+Say you have a hash function key % 5 and you want to insert
+5 15 16 20
+
+0 0  .1 0
+
+0 {5 % 5 } -> 0
+1 {15 % 5} -> 0 collision at 0 so move to 1
+2 {16 % 5} -> 1 collision at 1 so move to 2 etc...
+3
+4
+
+Chaining
+- Simple to implement
+hash table never get full
+cache performance is not good
+extra space for links
+moostly used when iit ia number of keys is unknown
+
+Open addressing
+more computation
+can get full
+better cache performance
+noo extra space is requried
+msotly used hwen the frequency and number of keys is known
+
+
+Techniques
+

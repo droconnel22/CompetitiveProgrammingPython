@@ -36,6 +36,8 @@ Find the two largest numbers
 from typing import List
 import sys
 
+# O(1)
+# S(log n)
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         x_low = 0

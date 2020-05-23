@@ -30,6 +30,8 @@ A solution set is:
   [3,5]
 ]
 
+Facebook Amazon Microsoft Airbnb Uber
+
 """
 
 from typing import List
@@ -55,7 +57,7 @@ class Solution:
             # two options apply current or move to next
            
             # apply current
-            next_buffer = buffer.copy()
+        next_buffer = buffer.copy()\
             next_buffer.append(candidates[current_index])
 
             gs_left = combinationSumHelper(candidates,

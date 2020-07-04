@@ -111,6 +111,8 @@ class Solution:
                     queue.append(current_node.left)
             level+=1
         return list(memo.values())
+
+        
     def zigzagLevelOrderans(self, root: TreeNode) -> List[List[int]]:
          q = deque()
          zag = False
